@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_Grupo7">
-        <activity android:name=".MainActivityInfo"></activity>
+        <activity android:name=".ActivityFormulario"></activity>
+        <activity android:name=".MainActivityInfo" />
         <activity android:name=".MainActivity" />
         <activity android:name=".splash_activity">
             <intent-filter>

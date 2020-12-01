@@ -18,4 +18,5 @@
         app:titleTextColor="#FFFFFF"
         app:subtitle="ANL@gmail.com"
         app:subtitleTextColor="#D5CCCC"/>
+
 </LinearLayout>

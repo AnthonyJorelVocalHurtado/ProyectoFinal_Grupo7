@@ -38,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
         }
         if(id==R.id.item2)
         {
-            Toast.makeText(this,"Crear Nuevo Formulario",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this,"Crear Nuevo Formulario",Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this,ActivityFormulario.class);
+            startActivity(i);
         }
         if(id==R.id.item1)
         {
