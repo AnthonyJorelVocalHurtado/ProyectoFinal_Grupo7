@@ -51,22 +51,22 @@ public class ActivityFormulario extends AppCompatActivity {
                 String anioString = etAnio.getText().toString().trim();
                 String estadoString = etEstado.getText().toString().trim();
                 if (nombreString.equals("")) {
-                    etNombre.setError("Inserta una Placa");
+                    etNombre.setError("Inserta un nombre");
                     etNombre.requestFocus();
                     return;
                 }
                 if (mesString.equals("")) {
-                    etMes.setError("Inserta un Color");
+                    etMes.setError("Inserta un Mes");
                     etMes.requestFocus();
                     return;
                 }
                 if (anioString.equals("")) {
-                    etAnio.setError("Inserta un Modelo");
+                    etAnio.setError("Inserta un Año");
                     etAnio.requestFocus();
                     return;
                 }
                 if (estadoString.equals("")) {
-                    etAnio.setError("Inserta un Modelo");
+                    etAnio.setError("Inserta un Estado");
                     etAnio.requestFocus();
                     return;
                 }
@@ -77,7 +77,7 @@ public class ActivityFormulario extends AppCompatActivity {
                 if (resultado==-1){
                     Toast.makeText(getApplicationContext(),"Error al insertar", Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(getApplicationContext(),"Vehiculo almacenado con exito", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Formulario almacenado con exito", Toast.LENGTH_LONG).show();
                     cargarFormularioSQLite();
                     adaptador = new Adaptador(listaFormulario);
                     rvFormulario.setAdapter(adaptador);
